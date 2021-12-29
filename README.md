@@ -30,11 +30,21 @@ You also need to use the SerializeReference Unity attribute.
 [SelectImplementation(typeof(IFood))]
 [SerializeField, SerializeReference] private IFood food = default;
 ```
+
 <img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo1.png" alt="Logo" data-align="inline">
 
 <img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo4.png" alt="Logo" data-align="inline">
 
 <img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo5.png" alt="Logo" data-align="inline">
+
+&nbsp; 
+
+It works with lists too!
+```csharp
+[SelectImplementation(typeof(IFood))]
+[SerializeField, SerializeReference] private List<IFood> food = default;
+```
+<img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo6.png" alt="Logo" data-align="inline">
 
 &nbsp;  
 
