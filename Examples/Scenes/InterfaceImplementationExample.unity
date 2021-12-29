@@ -157,9 +157,10 @@ MonoBehaviour:
   references:
     version: 1
     00000000:
-      type: {class: AppleFood, ns: Juce.ImplementationSelector.Example2, asm: Juce.ImplementationSelector.Examples}
+      type: {class: PizzaFood, ns: Juce.ImplementationSelector.Example2, asm: Juce.ImplementationSelector.Examples}
       data:
-        appleName: 
+        pizzaType: 
+        ammountOfSlices: 0
 --- !u!4 &147638383
 Transform:
   m_ObjectHideFlags: 0
@@ -203,27 +204,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d1d29919ff9c74ca71aa91f591fe37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listImplementations: []
-  listForceExpandImplementations: []
-  listForceExpandNoLabelImplementations: []
+  listImplementations:
+  - id: 0
+  listForceExpandImplementations:
+  - id: 1
+  listForceExpandNoLabelImplementations:
+  - id: 2
   singleImplementation:
-    id: 0
+    id: 3
   singleForceExpandImplementation:
-    id: 1
+    id: 4
   singleForceExpandNoLabelImplementation:
-    id: 2
+    id: 5
   references:
     version: 1
     00000000:
-      type: {class: Implementation2Interface, ns: Juce.ImplementationSelector, asm: Juce.ImplementationSelector.Examples}
+      type: {class: Implementation2Interface, ns: Juce.ImplementationSelector.Example1, asm: Juce.ImplementationSelector.Examples}
       data:
         stringValue: 
     00000001:
-      type: {class: Implementation2Interface, ns: Juce.ImplementationSelector, asm: Juce.ImplementationSelector.Examples}
+      type: {class: Implementation2Interface, ns: Juce.ImplementationSelector.Example1, asm: Juce.ImplementationSelector.Examples}
       data:
         stringValue: 
     00000002:
-      type: {class: Implementation2Interface, ns: Juce.ImplementationSelector, asm: Juce.ImplementationSelector.Examples}
+      type: {class: Implementation2Interface, ns: Juce.ImplementationSelector.Example1, asm: Juce.ImplementationSelector.Examples}
+      data:
+        stringValue: 
+    00000003:
+      type: {class: Implementation2Interface, ns: Juce.ImplementationSelector.Example1, asm: Juce.ImplementationSelector.Examples}
+      data:
+        stringValue: 
+    00000004:
+      type: {class: Implementation2Interface, ns: Juce.ImplementationSelector.Example1, asm: Juce.ImplementationSelector.Examples}
+      data:
+        stringValue: 
+    00000005:
+      type: {class: Implementation2Interface, ns: Juce.ImplementationSelector.Example1, asm: Juce.ImplementationSelector.Examples}
       data:
         stringValue: 
 --- !u!4 &272724073
