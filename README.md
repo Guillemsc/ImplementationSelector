@@ -23,7 +23,7 @@ Add the following line to your [manifest.json](https://docs.unity3d.com/Manual/u
 ```
 
 ## Basic Usage
-### SelectImplementationAttribute
+### - SelectImplementationAttribute
 You can turn an interface to a selectable interface using the attribute SelectImplementationAttribute.
 You also need to use the SerializeReference Unity attribute.
 ```csharp
@@ -49,7 +49,21 @@ public class AppleFood : IFood
 
 &nbsp; 
 
-### SelectImplementationDefaultType
+### - SelectImplementationTrimDisplayName
+You can use the interface SelectImplementationTrimDisplayName, on the base interface, to define a string that will always be trimmed from the name displayed of the classes that implement this interface.
+
+For example, if you have a base interface named IFood, and classes that inherit from it, like AppleFood, GrapesFood, PizzaFood, by using the SelectImplementationTrimDisplayName("Food"), the class names will be desplayed as Apple, Grapes, Pizza.
+```csharp
+[SelectImplementationTrimDisplayName("Food")]
+public interface : IFood
+{
+   
+}
+```
+
+&nbsp; 
+
+### - SelectImplementationDefaultType
 You can use the interface SelectImplementationDefaultType, on one of the classes that inherits from the base interface, to mark it as the default one that's going to appear on the editor the first time the user sees it.
 ```csharp
 [System.Serializable]
@@ -62,7 +76,7 @@ public class AppleFood : IFood
 
 &nbsp; 
 
-### SelectImplementationTooltip
+### - SelectImplementationTooltip
 You can use the interface SelectImplementationTooltip, on one of the classes that inherits from the base interface, to show a tooltip when the user hovers this specific type with the mouse
 ```csharp
 [System.Serializable]
