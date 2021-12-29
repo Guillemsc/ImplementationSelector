@@ -1,0 +1,18 @@
+{
+    "name": "Juce.ImplementationSelector.Examples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1089a22bce0ea9a468bf8e5a4f8cbad5"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
