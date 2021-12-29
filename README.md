@@ -47,6 +47,15 @@ It works with lists too!
 <img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo6.png" alt="Logo" data-align="inline">
 
 &nbsp;  
+SelectImplementation has two default values that can be changed: 
+- DisplayLabel: determines if the variable name is shown on the inspector. It's enabled by default.
+- ForceExpanded: determines if the properties of the class can be collapsed with a dropdown, or ar shown all the time. It's disabled by default.
+```csharp
+[SelectImplementation(typeof(IFood), displayLabel: true, forceExpanded: false)]
+[SerializeField, SerializeReference] private IFood food = default;
+```
+
+&nbsp;  
 
 The classes that inherit from the base interface need to be marked as serializable with the System.Serializable attribute
 ```csharp
