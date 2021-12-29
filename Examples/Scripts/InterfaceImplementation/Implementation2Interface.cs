@@ -4,6 +4,6 @@
     [SelectImplementationDefaultType]
     public class Implementation2Interface : IInteraface
     {
-        public string valuex = default;
+        public string stringValue = default;
     }
 }

@@ -2,11 +2,11 @@
 
 namespace Juce.ImplementationSelector
 {
-    public class SelectImplementationOptionTooltipAttribute : Attribute
+    public class SelectImplementationTooltipAttribute : Attribute
     {
         public string Tooltip { get; }
 
-        public SelectImplementationOptionTooltipAttribute(string tooltip)
+        public SelectImplementationTooltipAttribute(string tooltip)
         {
             Tooltip = tooltip;
         }

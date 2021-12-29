@@ -52,7 +52,7 @@ namespace Juce.ImplementationSelector.Layout
         {
             if (elementsCount <= 0)
             {
-                return 0.0f;
+                return 0f;
             }
 
             return (elementsCount * (EditorGUIUtility.singleLineHeight + 2)) + 2;
