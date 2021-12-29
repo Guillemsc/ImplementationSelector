@@ -109,7 +109,7 @@ public class AppleFood : IFood
 
 &nbsp; 
 
-### SelectImplementationCustomDisplayName
+### - SelectImplementationCustomDisplayName
 You can use the interface SelectImplementationCustomDisplayName, on one of the classes that inherits from the base interface, to show a specific name on the selection dropdown.
 ```csharp
 [System.Serializable]
