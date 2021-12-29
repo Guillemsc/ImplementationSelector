@@ -20,7 +20,12 @@ namespace Juce.ImplementationSelector.Logic
 
             editorData.Types = AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(assembly => assembly.GetTypes())
-                .Where(x => baseType.IsAssignableFrom(x) && !x.IsAbstract && !x.IsSubclassOf(typeof(UnityEngine.Object)))
+                .Where(x => 
+                    baseType.IsAssignableFrom(x) && 
+                    !x.IsAbstract && 
+                    !x.IsSubclassOf(typeof(UnityEngine.Object)) && 
+                    x.GetConstructor(Type.EmptyTypes) != null
+                    )
                 .ToArray();
         }
     }
