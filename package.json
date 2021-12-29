@@ -1,6 +1,6 @@
 {
   "name": "com.juce.implementationselector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Juce-ImplementationSelector",
   "description": "Editor utility for selecting interface implementations",
   "keywords": [
