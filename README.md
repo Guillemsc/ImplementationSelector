@@ -55,7 +55,7 @@ You can use the interface SelectImplementationTrimDisplayName, on the base inter
 For example, if you have a base interface named IFood, and classes that inherit from it, like AppleFood, GrapesFood, PizzaFood, by using the SelectImplementationTrimDisplayName("Food"), the class names will be desplayed as Apple, Grapes, Pizza.
 ```csharp
 [SelectImplementationTrimDisplayName("Food")]
-public interface : IFood
+public interface IFood
 {
    
 }
