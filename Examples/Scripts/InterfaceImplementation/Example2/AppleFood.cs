@@ -3,6 +3,7 @@
 namespace Juce.ImplementationSelector.Example2
 {
     [SelectImplementationDefaultType]
+    [SelectImplementationTooltip("Apple tooltip")]
     [System.Serializable]
     public class AppleFood : IFood
     {
