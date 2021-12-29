@@ -1,4 +1,4 @@
-﻿namespace Juce.ImplementationSelector
+﻿namespace Juce.ImplementationSelector.Example1
 {
     [System.Serializable]
     [SelectImplementationCustomDisplayName("Custom display")]

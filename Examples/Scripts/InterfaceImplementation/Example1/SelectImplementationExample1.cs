@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Juce.ImplementationSelector
+namespace Juce.ImplementationSelector.Example1
 {
-    public class SelectImplementationExample : MonoBehaviour
+    public class SelectImplementationExample1 : MonoBehaviour
     {
         [SelectImplementation(typeof(IInteraface))]
         [SerializeField, SerializeReference] private List<IInteraface> listImplementations = new List<IInteraface>();
