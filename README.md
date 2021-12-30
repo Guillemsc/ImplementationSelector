@@ -6,7 +6,7 @@
 [![Discord](https://img.shields.io/discord/768962092296044614.svg)](https://discord.gg/dbG7zKA)
 [![Release](https://img.shields.io/github/release/Juce-Assets/Juce-ImplementationSelector.svg)](https://github.com/Juce-Assets/Juce-ImplementationSelector/releases/latest)
 
-**Welcome to [Implementation Selector](https://github.com/Juce-Assets/Juce-ImplementationSelector):** a small Unity editor extension that allows you to automatically select interface implementations directly on the editor. This is very useful for rapdily create configuration files for your applications.
+**Welcome to [Implementation Selector](https://github.com/Juce-Assets/Juce-ImplementationSelector):** a small Unity editor extension that allows you to automatically select the interface/base class implementations directly on the editor. This is very useful for rapdily create configuration files for your applications.
 
 # Contents
 
@@ -31,7 +31,7 @@ Add the following line to your [manifest.json](https://docs.unity3d.com/Manual/u
 
 ## Basic Usage
 ### - SelectImplementationAttribute
-You can turn an interface to a selectable interface using the attribute SelectImplementationAttribute.
+You can turn an interface/base class to a selectable one using the attribute SelectImplementationAttribute.
 You also need to use the SerializeReference Unity attribute.
 ```csharp
 [SelectImplementation(typeof(IFood))]
@@ -64,7 +64,7 @@ SelectImplementation has two default values that can be changed:
 
 &nbsp;  
 
-The classes that inherit from the base interface need to be marked as serializable with the System.Serializable attribute
+The classes that inherit from the base one need to be marked as serializable with the System.Serializable attribute.
 ```csharp
 [System.Serializable]
 public class AppleFood : IFood
@@ -76,7 +76,7 @@ public class AppleFood : IFood
 &nbsp; 
 
 ### - SelectImplementationTrimDisplayName
-You can use the interface SelectImplementationTrimDisplayName, on the base interface, to define a string that will always be trimmed from the name displayed of the classes that implement this interface.
+You can use the attribute SelectImplementationTrimDisplayName, on the base interface/class, to define a string that will always be trimmed from the name displayed of the classes that implement this interface.
 
 For example, if you have a base interface named IFood, and classes that inherit from it, like AppleFood, GrapesFood, PizzaFood, by using the SelectImplementationTrimDisplayName("Food"), the class names will be desplayed as Apple, Grapes, Pizza.
 ```csharp
@@ -90,7 +90,7 @@ public interface IFood
 &nbsp; 
 
 ### - SelectImplementationDefaultType
-You can use the interface SelectImplementationDefaultType, on one of the classes that inherits from the base interface, to mark it as the default one that's going to appear on the editor the first time the user sees it.
+You can use the attribute SelectImplementationDefaultType, on one of the classes that inherits from the base interface/class, to mark it as the default one that's going to appear on the editor the first time the user sees it.
 ```csharp
 [System.Serializable]
 [SelectImplementationDefaultType]
@@ -103,7 +103,7 @@ public class AppleFood : IFood
 &nbsp; 
 
 ### - SelectImplementationTooltip
-You can use the interface SelectImplementationTooltip, on one of the classes that inherits from the base interface, to show a tooltip when the user hovers this specific type with the mouse
+You can use the attribute SelectImplementationTooltip, on one of the classes that inherits from the base interface/class, to show a tooltip when the user hovers this specific type with the mouse
 ```csharp
 [System.Serializable]
 [SelectImplementationTooltip("Apple tooltip")]
@@ -117,7 +117,7 @@ public class AppleFood : IFood
 &nbsp; 
 
 ### - SelectImplementationCustomDisplayName
-You can use the interface SelectImplementationCustomDisplayName, on one of the classes that inherits from the base interface, to show a specific name on the selection dropdown.
+You can use the attribute SelectImplementationCustomDisplayName, on one of the classes that inherits from the base interface/class, to show a specific name on the selection dropdown.
 ```csharp
 [System.Serializable]
 [SelectImplementationCustomDisplayName("Custom Apple display")]
