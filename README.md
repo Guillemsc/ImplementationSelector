@@ -25,7 +25,7 @@ And that's all, with that you should be ready to go!
 Add the following line to your [manifest.json](https://docs.unity3d.com/Manual/upm-manifestPrj.html).
 ```
 "dependencies": {
-   "com.juce.implementationselector": "git+https://github.com/Juce-Assets/Juce-ImplementationSelector#1.0.1",
+   "com.juce.implementationselector": "git+https://github.com/Juce-Assets/Juce-ImplementationSelector#1.0.2",
 },
 ```
 
