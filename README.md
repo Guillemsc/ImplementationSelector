@@ -8,6 +8,13 @@
 
 **Welcome to [Implementation Selector](https://github.com/Juce-Assets/Juce-ImplementationSelector):** a small Unity editor extension that allows you to automatically select interface implementations directly on the editor. This is very useful for rapdily create configuration files for your applications.
 
+# Contents
+
+- [Installing](https://github.com/Juce-Assets/Juce-ImplementationSelector#installing)
+- [Basic Usage](https://github.com/Juce-Assets/Juce-ImplementationSelector#basic-usage)
+- [Want to contribute?](https://github.com/Juce-Assets/Juce-ImplementationSelector#want-to-contribute)
+- [Contributors](https://github.com/Juce-Assets/Juce-ImplementationSelector#contributors)
+
 ## Installing
 ### - Via Github
 Download the full repositories, and then place it under the Assets folder of your Unity project.
