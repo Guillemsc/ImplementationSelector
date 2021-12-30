@@ -10,7 +10,7 @@
 
 ## Installing
 ### - Via Github
-Download the full repositories, and then place them under the Assets folder of your Unity project.
+Download the full repositories, and then place it under the Assets folder of your Unity project.
 
 And that's all, with that you should be ready to go!
 
