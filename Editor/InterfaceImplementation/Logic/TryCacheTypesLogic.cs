@@ -21,6 +21,7 @@ namespace Juce.ImplementationSelector.Logic
             editorData.Types = AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(assembly => assembly.GetTypes())
                 .Where(x => 
+                    baseType != x &&
                     baseType.IsAssignableFrom(x) && 
                     !x.IsAbstract && 
                     !x.IsSubclassOf(typeof(UnityEngine.Object)) && 
