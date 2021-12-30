@@ -67,6 +67,7 @@ SelectImplementation has two default values that can be changed:
 &nbsp;  
 
 The classes that inherit from the base one need to be marked as serializable with the System.Serializable attribute.
+They also need to have the default constructor, or a public parameterless one.
 ```csharp
 [System.Serializable]
 public class AppleFood : IFood
