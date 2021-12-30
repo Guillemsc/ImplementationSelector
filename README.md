@@ -120,3 +120,25 @@ public class AppleFood : IFood
 }
 ```
 <img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo3.png" alt="Logo" data-align="inline">
+
+&nbsp; 
+
+We are always aiming to improve this tool. You can always leave suggestions on the [Issues](https://github.com/Juce-Assets/Juce-ImplementationSelector/issues).
+
+## Want to contribute?
+
+**Please follow these steps to get your work merged in.**
+
+0. Clone the repo and make a new branch: `$ git checkout https://github.com/Juce-Assets/Juce-ImplementationSelector/tree/main -b [name_of_new_branch]`.
+
+1. Add a feature, fix a bug, or refactor some code :)
+
+2. Update `README.md` contributors, if necessary.
+
+3. Open a Pull Request with a comprehensive description of changes.
+
+### 
+
+## Contributors
+
+- Guillem SC - [@Guillemsc](https://github.com/Guillemsc)
