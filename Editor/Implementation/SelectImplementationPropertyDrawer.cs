@@ -56,6 +56,11 @@ namespace Juce.ImplementationSelector
                     );
             }
 
+            if (Event.current.type == EventType.Layout)
+            {
+                return;
+            }
+
             layoutHelper.Init(position);
 
             bool shouldDrawChildren = (property.hasVisibleChildren && property.isExpanded) || typeAttribute.ForceExpanded;
