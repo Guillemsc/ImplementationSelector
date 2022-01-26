@@ -7,7 +7,7 @@ namespace Juce.ImplementationSelector.Example2
     [System.Serializable]
     public class AppleFood : IFood
     {
-        [SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>")]
-        [SerializeField] private string appleName = default;
+        [SerializeField]
+        private string appleName = default;
     }
 }
