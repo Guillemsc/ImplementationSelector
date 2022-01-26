@@ -3,7 +3,6 @@ using Juce.ImplementationSelector.Data;
 using System;
 using System.Linq;
 
-
 namespace Juce.ImplementationSelector.Logic
 {
     public static class TryCacheTypesLogic
