@@ -18,16 +18,13 @@ namespace Juce.ImplementationSelector.Logic
 
             Type baseType = typeAttribute.FieldType;
 
-            editorData.Types = AppDomain.CurrentDomain.GetAssemblies()
-                .SelectMany(assembly => assembly.GetTypes())
-                .Where(x => 
-                    baseType != x &&
-                    baseType.IsAssignableFrom(x) && 
-                    !x.IsAbstract && 
-                    !x.IsSubclassOf(typeof(UnityEngine.Object)) && 
-                    x.GetConstructor(Type.EmptyTypes) != null
-                    )
-                .ToArray();
+            editorData.Types = TypeCache.GetTypesDerivedFrom(baseType).Where(x => 
+	            baseType != x &&
+	            baseType.IsAssignableFrom(x) &&
+	            !x.IsAbstract &&
+	            !x.IsSubclassOf(typeof(UnityEngine.Object)) &&
+	            (x.GetConstructor(Type.EmptyTypes) != null || x.IsValueType)
+            ).ToArray();
         }
     }
 }
