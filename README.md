@@ -152,4 +152,5 @@ We are always aiming to improve this tool. You can always leave suggestions on t
 ## Contributors
 
 - Guillem SC - [@Guillemsc](https://github.com/Guillemsc)
+- Pere Viader - [@PereViader](https://github.com/PereViader)
 - Balázs K - [@BallerJColt](https://github.com/BallerJColt)
