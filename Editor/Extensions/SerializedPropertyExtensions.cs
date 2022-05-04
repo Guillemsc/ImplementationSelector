@@ -21,6 +21,7 @@ namespace Juce.ImplementationSelector.Extensions
             {
                 height += EditorGUI.GetPropertyHeight(serializedProperty);
                 serializedProperty.NextVisible(false);
+                height += EditorGUIUtility.standardVerticalSpacing;
             }
 
             return height;
