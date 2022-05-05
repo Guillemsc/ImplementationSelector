@@ -154,4 +154,4 @@ We are always aiming to improve this tool. You can always leave suggestions on t
 - Guillem SC - [@Guillemsc](https://github.com/Guillemsc)
 - Pere Viader - [@PereViader](https://github.com/PereViader)
 - Balázs K - [@BallerJColt](https://github.com/BallerJColt)
-- IvanPolovyi- [@IvanPolovyi](https://github.com/IvanPolovyi)
+- IvanPolovyi - [@IvanPolovyi](https://github.com/IvanPolovyi)
