@@ -126,8 +126,8 @@ public class AppleFood : IFood
 ```
 <img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo3.png" alt="Logo" data-align="inline">
 
-## Issues
-We are always aiming to improve this tool. You can always leave suggestions on the [Issues](https://github.com/Juce-Assets/Juce-ImplementationSelector/issues).
+
+#### We are always aiming to improve this tool. You can always leave suggestions [here](https://github.com/Juce-Assets/Juce-ImplementationSelector/issues).
 
 ## Want to contribute?
 
