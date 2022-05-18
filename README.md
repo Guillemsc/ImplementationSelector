@@ -46,8 +46,6 @@ You also need to use the SerializeReference Unity attribute.
 
 <img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo5.png" alt="Logo" data-align="inline">
 
-&nbsp; 
-
 It works with lists too!
 ```csharp
 [SelectImplementation(typeof(IFood))]
@@ -55,7 +53,6 @@ It works with lists too!
 ```
 <img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo6.png" alt="Logo" data-align="inline">
 
-&nbsp;  
 SelectImplementation has two default values that can be changed: 
 - DisplayLabel: determines if the variable name is shown on the inspector. It's enabled by default.
 - ForceExpanded: determines if the properties of the class can be collapsed with a dropdown, or ar shown all the time. It's disabled by default.
@@ -63,8 +60,6 @@ SelectImplementation has two default values that can be changed:
 [SelectImplementation(typeof(IFood), displayLabel: true, forceExpanded: false)]
 [SerializeField, SerializeReference] private IFood food = default;
 ```
-
-&nbsp;  
 
 The classes that inherit from the base one need to be marked as serializable with the System.Serializable attribute.
 They also need to have the default constructor, or a public parameterless one.
@@ -131,8 +126,7 @@ public class AppleFood : IFood
 ```
 <img title="" src="https://github.com/Juce-Assets/Juce-ImplementationSelector/blob/main/Misc/HowTo3.png" alt="Logo" data-align="inline">
 
-&nbsp; 
-
+## Issues
 We are always aiming to improve this tool. You can always leave suggestions on the [Issues](https://github.com/Juce-Assets/Juce-ImplementationSelector/issues).
 
 ## Want to contribute?
